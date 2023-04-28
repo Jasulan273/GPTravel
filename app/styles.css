@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+/* Add a background color to the chat screen */
+
+  .logo-container
+  {
+    width: 100%;
+    text-align: center;
+  }
+
+  .codingnexus {
+    color: #fff;
+    margin-top: 15px;
+    font-size: 12px;
+  }
+  .codingnexus a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  #loading {
+    font-size: 50px;
+  }
+
+  /* Style the chat box */
+  .chat-box {
+    margin: 0 auto;
+    width: 350px;
+    max-width: 100%;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    max-height: calc(100vh - 250px);
+    height: calc(100vh - 250px);
+    margin-bottom:100px;
+  }
+
+  .codingnexus {
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Style the chat box header */
+  .chat-box-header {
+    background-color: #0084ff;
+    color: #ffffff;
+    padding: 16px;
+    font-size: 20px;
+    font-weight: bold;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+  }
+  
+  /* Style the chat box body */
+  .chat-box-body {
+    padding: 16px;
+    overflow-y: auto;
+    height: calc(100% - 145px);
+  }
+  
+  /* Style the chat messages */
+  .chat-box-body .message,
+  .chat-box-body .response {
+    margin-bottom: 16px;
+    padding: 8px 16px;
+    border-radius: 8px;
+  }
+  
+  /* Style the user's messages */
+  .chat-box-body .message {
+    background-color: #e6e6e6;
+    color: #333333;
+  }
+  
+  /* Style the chatbot's responses */
+  .chat-box-body .response {
+    background-color: #0084ff;
+    color: #ffffff;
+    text-align: right;
+  }
+  
+  /* Style the chat box footer */
+  .chat-box-footer {
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    border-top: 1px solid #e6e6e6;
+    padding: 8px 16px;
+  }
+  
+  /* Style the input field */
+  .chat-box-footer input[type="text"] {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #e6e6e6;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+  }
+  
+  /* Style the button */
+  .chat-box-footer button {
+    margin-left: 8px;
+    padding: 8px 16px;
+    background-color: #0084ff;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  /* Add some hover effects to the button */
+  .chat-box-footer button:hover {
+    background-color: #0073e6;
+  }
+  
+  .chat-box-footer button:active {
+    background-color: #005bbf;
+  }
+
+  body {font-family: Arial, Helvetica, sans-serif;}
+  * {box-sizing: border-box;}
+  
+  /* Button used to open the chat form - fixed at the bottom of the page */
+  .open-button {
+    background-image: url(chatbot.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+    position: fixed;
+    bottom: 23px;
+    right: 28px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    z-index: 999;
+    transition: all ease-in 0.5s;
+  }
+  
+  /* The popup chat - hidden by default */
+  .chat-popup {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 15px;
+    z-index: 9;
+    transition: all ease-in 0.5s;
+  }
+  
+  /* Add styles to the form container */
+  .form-container {
+    max-width: 300px;
+    padding: 10px;
+    background-color: white;
+  }
+  
+  /* Full-width textarea */
+  .form-container textarea {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+    resize: none;
+    min-height: 200px;
+  }
+  
+  /* When the textarea gets focus, do something */
+  .form-container textarea:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+  
+  /* Set a style for the submit/send button */
+  .form-container .btn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom:10px;
+    opacity: 0.8;
+  }
+  
+  /* Add a red background color to the cancel button */
+  .form-container .cancel {
+    background-color: red;
+  }
+  
+  /* Add some hover effects to buttons */
+  .form-container .btn:hover, .open-button:hover {
+    opacity: 1;
+    transition: all ease-in 0.5s;
+  }
